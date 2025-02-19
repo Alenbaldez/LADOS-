@@ -1,0 +1,115 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+/* Google fonts  Roboto */
+/*  font-family: "Roboto", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #ffe4c4;
+    margin: 12px;
+}
+.navbar {
+    color: #6e6f7af2;
+}
+
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partone {
+    margin-top: 30px;
+}
+
+.navbar-toggler {
+    border: 2px solid  #7f7f85f2; 
+    padding: 5px; /* Espaciado interno para que se vea bien */
+    border-radius: 5px; 
+    
+}
+.navbar-toggler-icon {
+    filter: invert(1); /* Invierte el color (hace el icono blanco si era negro y viceversa) */
+    border-color: gray;
+}
+
+.logo{
+    width: 200px;
+    height: 150px;
+}
+
+.h1, h1{
+    color: #2135b9;
+    text-align: center;
+    font-size:80px ;
+}
+
+.f-novias{
+    margin-left: 30px;
+    padding: 20px;
+    gap: 40px;
+    width: 200px;
+    height: 300px
+}
+
+
+.h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.moda{
+    text-align: center;
+    color: #0000fff2;
+}
+.moda-uno{
+    width: 200px;
+    height: 300px;
+}
+/* primer articulo*/
+
+.boda{
+    width:200px ;
+    height: 300px;
+}
+
+.subtitulo{
+    color: #a52a2a;
+    font-size: 80px; 
+    font-family: "Roboto", serif;
+    text-align: center;    
+}
+
+/* estilo para Contacto */
+.datos{
+    color: #0000fff2;
+    font-size: 40px;
+    font-family: "Roboto", serif;
+    text-align: center;
+}
+
+.formulario{
+    width: 30%;
+    max-width: 300%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.articulo-dos{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Roboto", serif;
+
+
+}
+footer {
+    text-align: center;
+}
