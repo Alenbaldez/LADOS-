@@ -3,57 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confeccion de Vestidos</title>
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--.css-->
     <link rel="stylesheet" href="../styles/stayle.css">
+    <title>Confeccion de Vestidos</title>
 </head>
 <body>
     <header>
-        <!--logotipo-->
-        <img class="logo" src="../icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.jpeg" alt="">
-        <!--navegador -->
-            <nav>
-                <ul>
-                    <li class="nav-li">
-                        <a class="nav-link" href="./inicio.html">Inicio</a>
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.jpeg" alt="Lados" width="100" height="70"></a>
+                MODA CIRCULAR 
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MODA CIRCULAR</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../pages/nosotras.html">Nosotras</a>
                     </li>
-                    
-                    <li class="nav-li">
-                        <a class="nav-link" href="./novias.html">Novias</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/novias.html">Novias</a>
                     </li>
-                    <li class="nav-li">
-                        <a class="nav-link" href="./quinceañeras.html">Quinceañeras</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/quinceañeras.html">Quinceañeras</a>
                     </li>
-                    <li class="nav-li">
-                        <a class="nav-link" href="./invitadas.html">Invitadas</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/invitadas.html">Invitadas</a>
                     </li>
-                    <li class="nav-li">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="../pages/contacto.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contacto</a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="../pages/contacto.html">Consultas</a></li>
+                        <li><a class="dropdown-item" href="#">Reservas</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Testimonios</a></li>
+                      </ul>
                     </li>
-                </ul>
-            </nav>
-    </header>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>    
+
     <main>
-        <section>
-            <h2 class="moda">El arte de confeccionar un vestido ideal </h2>   
-            <article>
-                    <h3 class="subtitulo">NOVIAS</h3>
-                    <h2>¿Cómo funciona?</h2>
-                    <p>La confección a medida de vestidos es un servicio exclusivo y personalizado que se centra en la creación de prendas únicas diseñadas para adaptarse perfectamente a las medidas y que expresen la personalidad y estilo del cliente.</p>
-                    <img class="boda" src="../assets/img/novias/BODAS.jpg" alt="">
-                    <img class="boda" src="../assets/img/novias/Mara-36-683x1024.jpg" alt="">
-                    <p>Cada diseño esta creado contemplando todos los detalles</p>
-                    En nuestro Atelier cada vestido cuenta una historia unica. Por esto es que nuestro compromiso es tan importante como el diseño </p>
-                    <h3>Momento especial</h3>
-                    <p>En nuestro salon hacemos que ese momento especial sea realmente unico.</p>
-            </article>
-        </section>    
+        <!-- comienza la seccion de Novias --> 
+        <section class="container-fluid-partone">    
+            <div class="row">
+              <div class="col-6-md-8 col-md-12 col-md-lg-6">
+                  <h3 class="subtitulo">NOVIAS</h3>
+              </div>
+
+              <div class="col-6-md-8 col-md-12 col-md-lg-6 custom-box">
+                  <h3 class="explicacion">Momento especial</h3>
+                  <p>El día de tu boda es uno de los momentos más especiales de tu vida. Es una celebración de amor, compromiso y nuevos comienzos. Por eso, elegir el vestido adecuado es una decisión significativa. Optar por un vestido de novia hecho a medida no solo garantiza que te quedará perfecto, sino que convierte el proceso en una experiencia inolvidable.</p>
+                  <p>Cada paso en la creación de un vestido a medida está diseñado exclusivamente para ti. Desde la elección de telas hasta el más mínimo detalle en el diseño, todo refleja tu personalidad y estilo. Además, trabajar de la mano con una diseñadora dedicada permite que tus sueños y visiones cobren vida de manera única.</p>
+              </div>
+            
+
+              <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../assets/img/novias/BODAS.jpg" class="img-fluid rounded" alt="Novia 1">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="../assets/img/novias/Mara-36-683x1024.jpg" class="img-fluid rounded" alt="Novia 2">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="../assets/img/novias/BODAS.jpg" class="img-fluid rounded" alt="Novia 3">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="../assets/img/novias/Mara-36-683x1024.jpg" class="img-fluid rounded" alt="Novia 4">
+                    </div>
+                </div>
+            </div> 
+          
+
+          <div class="col-6-md-8 col-md-12 col-md-lg-6 custom-box">
+                  <h3 class="explicacion">¿Cómo funciona?</h3>
+                  <p>El proceso de creación también es un viaje emocional. Cada prueba, cada ajuste y cada detalle seleccionado se convierten en recuerdos que atesorarás para siempre. Compartir estos momentos con tus seres queridos agrega un valor sentimental que ningún vestido listo para usar podría ofrecer.</p>
+                  <p>Un vestido de novia a medida es una obra de arte exclusiva. Refleja no solo tu estilo, sino también tu historia de amor. Es una prenda que se adapta a ti en lugar de que tú te adaptes a ella, haciendo que te sientas única y especial en un día tan importante.</p>
+          </div>           
+      </div>  
+    </section>   
     </main>
+
 
     <footer>
         <img class="logo" src="../icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.jpeg" alt="">
-        <p> 0 2025. All right reserved. Alen Baldez for Seven home</p>
-        
-            </footer>
-        </body>
-        </html>
+        <p> @ 2025. All right reserved. Alen Baldez for Seven home</p>
+    </footer>
+    <!--BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
