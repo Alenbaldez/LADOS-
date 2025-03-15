@@ -1,0 +1,39 @@
+/* media query  page invitadas*/
+
+@media (min-width: 768px) and (max-width: 1068px) {
+    .custom-inv {
+        color: #2135b9;
+    }
+    
+
+@media (min-width:768px) and (max-width:100%) {
+    .custom-inv {
+        padding-left: 10px;
+    }
+
+    }
+@media (min-width:576px) and (max-width:767px) {
+    .f-invitada {
+        display: block;
+        margin: 0 auto;
+        
+    }
+}
+@media (min-width:576px)and (max-width:100%) {
+    .f-invitada {
+        width: 80%;
+        height: auto;
+    }
+}
+/* media query  page nosotras*/
+
+@media (max-width: 1068px) {
+
+.f-nosotras {
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(11, 11, 11, 0.826);
+}
+
+    }
+}

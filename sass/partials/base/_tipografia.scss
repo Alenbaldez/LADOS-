@@ -1,0 +1,49 @@
+/* Google fonts  Roboto */
+/*  font-family: "Roboto", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// Estilos de títulos
+
+.titulo {
+    color: #2135b9;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);}
+
+
+.titulo-dos {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.subtitulo{
+    margin-top: 60px;
+    color: #6F4E37;
+    font-size: 3rem; 
+    font-family: "Roboto", serif;
+    text-align: center;   
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+/* estilo para Contacto */
+.datos{
+
+    color: #0000fff2;
+    font-size: 40px;
+    font-family: "Roboto", serif;
+    text-align: center;
+}
+
+.articulo-dos{
+    text-align: center;
+    font-size: 80px;
+    font-family: "Roboto", serif;
+}    
