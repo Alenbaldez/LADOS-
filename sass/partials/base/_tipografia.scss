@@ -1,3 +1,7 @@
+@use "../utilities/varialbles" as v; 
+@use "../utilities/mixins";     
+@use "../utilities/maps" as m; 
+
 /* Google fonts  Roboto */
 /*  font-family: "Roboto", serif; */
 
@@ -7,43 +11,41 @@
 // Estilos de títulos
 
 .titulo {
-    color: #2135b9;
-    font-size: 4rem;
-    text-align: center;
+    color: map-get(m.$colores,primario);
+    font-size: map-get(m.$tipografia,tamanos xl);
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);}
+    @include mixins.titulo;
+}
 
 
 .titulo-dos {
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: map-get(m.$tipografia,tamanos md);
     margin-top: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    @include mixins.titulo;
 
 }
 
 .subtitulo{
     margin-top: 60px;
     color: #6F4E37;
-    font-size: 3rem; 
+    font-size:map-get(m.$tipografia,tamanos lg) ; 
     font-family: "Roboto", serif;
-    text-align: center;   
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    @include mixins.titulo; 
 }
 
 /* estilo para Contacto */
 .datos{
 
-    color: #0000fff2;
+    color:map-get(m.$colores,primario);
     font-size: 40px;
     font-family: "Roboto", serif;
-    text-align: center;
+    @include mixins.titulo;
 }
 
 .articulo-dos{
-    text-align: center;
     font-size: 80px;
     font-family: "Roboto", serif;
-}    
+    @include mixins.titulo;
+}

@@ -1,39 +1,31 @@
-$color-texto: #040404f2;
-$color-fondo: #c786eaf2;
-$border-radius: 5px;
-$box-shadow: 0 8px 15px rgba(0, 0, 0, 0.659);
+@use "../utilities/varialbles" as v; 
+@use "../utilities/mixins";  
+@use "../utilities/maps" as m;       
+
 
 .navbar {
-    color: $color-texto;
-    background-color: $color-fondo;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
+    color: v.$color-texto;
+    background-color: v.$color-fondo;
+    border-radius: v.$border-radius;
+    box-shadow: v.$box-shadow;
     margin-top: 40px;
 }
 
-$color-borde-toggler: #5656c6f2;
-$padding-toggler: 5px;
-$border-radius-toggler: 5px;
-
 .navbar-toggler {
-    border: 2px solid $color-borde-toggler; 
-    padding: $padding-toggler;
-    border-radius: $border-radius-toggler;
+    border: 2px solid v.$color-borde-toggler; 
+    padding: v.$padding-toggler;
+    border-radius: v.$border-radius-toggler;
 }
 
-$color-icono-toggler: rgb(208, 191, 223);
-$filter-invert: invert(1);
-
 .navbar-toggler-icon {
-    filter: $filter-invert; 
-    border-color: $color-icono-toggler;
+    filter: v.$filter-invert; 
+    border-color: v.$color-icono-toggler;
 }
 
 .offcanvas-body {
     background-color: rgb(224, 177, 210);
 }
+.navbar-brand {
+    border-radius: 10px;
 
-.logo {
-    width: 200px;
-    height: 150px;
 }

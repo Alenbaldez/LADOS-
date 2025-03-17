@@ -1,0 +1,31 @@
+// tamaños para margenes y padding
+
+$espaciados: (
+  xs: 5px,
+  sm: 10px,
+  md: 20px,
+  lg: 40px,
+  xl: 60px
+);
+
+// colores generales 
+
+$colores: (
+  primario: #2135b9,
+  secundario: #6F4E37,
+  fondo: #fceee1,
+
+);
+
+// tipofrafias
+
+$tipografia: (
+  principal: 'roboto, sans-serif',
+  secundaria: 'Georgia, serif',
+  tamanos: (
+    sm: 12px,
+    md: 1.2rem,
+    lg: 3rem,
+    xl: 4rem
+  )
+);

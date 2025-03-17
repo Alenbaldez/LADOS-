@@ -1,0 +1,14 @@
+//mixin para foto de vestido
+@mixin vestido {
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(11, 11, 11, 0.652);
+
+}
+
+//mixin para tutulos-subtitulos
+@mixin titulo {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
