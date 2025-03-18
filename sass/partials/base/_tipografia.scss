@@ -2,6 +2,7 @@
 @use "../utilities/mixins";     
 @use "../utilities/maps" as m; 
 
+
 /* Google fonts  Roboto */
 /*  font-family: "Roboto", serif; */
 
@@ -12,7 +13,7 @@
 
 .titulo {
     color: map-get(m.$colores,primario);
-    font-size: map-get(m.$tipografia,tamanos xl);
+    font-size:map-get(map-get(m.$tipografia, tamanos), xl);
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -21,7 +22,7 @@
 
 
 .titulo-dos {
-    font-size: map-get(m.$tipografia,tamanos md);
+    font-size:map-get(map-get(m.$tipografia, tamanos), md);
     margin-top: 20px;
     @include mixins.titulo;
 
@@ -30,7 +31,7 @@
 .subtitulo{
     margin-top: 60px;
     color: #6F4E37;
-    font-size:map-get(m.$tipografia,tamanos lg) ; 
+    font-size:map-get(map-get(m.$tipografia, tamanos), lg);
     font-family: "Roboto", serif;
     @include mixins.titulo; 
 }

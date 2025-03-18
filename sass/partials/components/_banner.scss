@@ -32,6 +32,11 @@
     @extend.carousel-control-prev-icon  
 }
 
+.carousel-inner{
+    margin-bottom: 30px;
+}
+
+
 .f-invitada {
     margin: auto;
     @include mixins.vestido; 
