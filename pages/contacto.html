@@ -61,27 +61,33 @@
 
     <main>
         <section>
-                <article>
                     <h3 class="datos">Consultas</h3>
                     <!--formulario-->
                     <!--etiqueta contenedora del formulario-->
-                    <form action="/submit" method="post">
-                        <lebel for="nombre-apellido">Nombre y Apellido:</lebel>
-                        <input type="text" name="nombre-apellido" id="nombre-apellido">
-    
-                        <lebel for="numero">Telefono:</lebel>
-                        <input type="tel" name="numero" id="numero">
-    
-                        <label for="email">Correo Electronico</label>
-                        <input type="email" name="mail" id="email">
-    
-                        <lebel for="mensaje">Mensaje:</lebel>
-                        <textarea name="mensaje" id="numero"></textarea>
-    
-                        <input type="submit" value="Enviar">
-                    </form>
-                </article>  
-            </section>
+                    <section>
+                      <article>
+                        <form action="/submit" method="post" class="formulario">
+                          <!-- Nombre y Apellido -->
+                          <label for="nombre-apellido">Nombre y Apellido:</label>
+                          <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Ej. Ana Gómez" required>
+                    
+                          <!-- Teléfono -->
+                          <label for="numero">Teléfono:</label>
+                          <input type="tel" name="numero" id="numero" placeholder="Ej. +54 11 1234-5678" required>
+                    
+                          <!-- Correo Electrónico -->
+                          <label for="email">Correo Electrónico:</label>
+                          <input type="email" name="mail" id="email" placeholder="Ej. tu@email.com" required>
+                    
+                          <!-- Mensaje -->
+                          <label for="mensaje">Mensaje:</label>
+                          <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    
+                          <!-- Botón de Enviar -->
+                          <button type="submit">Enviar</button>
+                        </form>
+                      </article>
+                    </section>
         </main>
 
         <footer>
