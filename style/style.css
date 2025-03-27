@@ -158,43 +158,6 @@ body {
   box-shadow: 0 4px 8px rgba(11, 11, 11, 0.652);
 }
 
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 30px;
-  padding: 20px;
-}
-.galeria .grid-item {
-  display: flex;
-  flex-direction: column; /* Apila imagen y texto verticalmente */
-  align-items: start;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 10px;
-  margin-top: 60px;
-  background-color: #fceee1;
-  border-radius: 10px;
-}
-.galeria .grid-item img {
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(11, 11, 11, 0.652);
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.galeria .grid-item p {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.img-fluid {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .formulario {
   max-width: 600px;
   margin: 40px auto;
@@ -270,54 +233,6 @@ footer {
 
 .custom-inv {
   padding-left: 10px;
-}
-
-.atelier-container {
-  background: linear-gradient(to right, #bcb6be, #f9f4fc); /* Fondo degradado */
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.atelier {
-  max-width: 900px;
-  padding: 40px;
-  background: #ffffff; /* Fondo blanco para resaltar */
-  border-radius: 32px; /* Bordes suaves */
-  box-shadow: 0 8px 40px rgba(107, 63, 160, 0.2); /* Sombra elegante */
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid-item {
-  background: #f9f6fb;
-  border-radius: 24px;
-  overflow: hidden; /* Para que las imágenes no sobresalgan */
-  box-shadow: 0 6px 20px rgba(107, 63, 160, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.grid-item img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  height: 400px;
-}
-
-.texto-item {
-  padding: 30px;
-}
-.texto-item p {
-  line-height: 1.8;
-  font-size: 1.1rem;
-  color: #4a4a4a;
 }
 
 .contenedor-novia {
@@ -402,6 +317,171 @@ footer {
   border-radius: 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.atelier-container {
+  background: linear-gradient(to right, #bcb6be, #f9f4fc); /* Fondo degradado */
+  padding: 90px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.atelier {
+  max-width: 900px;
+  padding: 40px;
+  background: #e7c6c6;
+  border-radius: 32px;
+  box-shadow: 0 8px 40px rgba(107, 63, 160, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.galeria .grid-item {
+  display: flex;
+  flex-direction: column; /* Apila imagen y texto verticalmente */
+  align-items: start;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 60px;
+  background-color: #fceee1;
+  border-radius: 10px;
+}
+.galeria .grid-item img {
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(11, 11, 11, 0.652);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.galeria .grid-item p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.portada {
+  position: relative;
+}
+.portada-invitadas h2 {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  color: #f1f0eb;
+  font-size: 5rem;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 10px;
+  transform: translate(0, -50%);
+  padding: 20px;
+}
+.portada-invitadas h3 {
+  position: absolute;
+  top: 75%;
+  color: #232221;
+  font-size: 2rem;
+  left: 50%;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
+  transform: translate(0, -50%);
+  padding: 20px;
+}
+.portada-invitadas-f {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.galeria_invitadas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.galeria_invitadas img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.galeria_invitadas img:hover {
+  transform: scale(1.05);
+}
+
+.contenedor {
+  display: flex;
+  gap: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contenedor .columna {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.contenedor .columna p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.invitadas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  background: #faf7f4;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fondo-opaco {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.fondo-opaco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/img/quinceañeras/rita_quince_trece.webp") center/cover no-repeat;
+  opacity: 0.7;
+  z-index: -1;
+}
+.fondo-opaco h1 {
+  position: relative;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
