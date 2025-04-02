@@ -3,6 +3,9 @@
 /*  font-family: "Roboto", serif; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #fceee1;
@@ -11,6 +14,20 @@ body {
 
 .fondo-nuevo {
   background-color: azure;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #232221;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
 }
 
 .titulo {
@@ -88,6 +105,12 @@ body {
   border-radius: 10px;
 }
 
+@media (max-width: 1560px) {
+  .custom-box {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 1068px) {
   .custom-inv {
     color: #2135b9;
@@ -110,17 +133,125 @@ body {
     height: auto;
   }
 }
-@media (min-width: 768px) and (max-width: 1068px) and (max-width: 1068px) {
+@media (max-width: 576px) {
+  .galeria {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media (max-width: 1068px) {
   .f-nosotras {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(11, 11, 11, 0.826);
   }
 }
+@media (max-width: 576px) {
+  .quince-quinceaneras h2 {
+    font-size: 1rem !important;
+    top: 35% !important;
+    left: 5% !important;
+    transform: translate(0, -30%) !important;
+  }
+  .quince-quinceaneras h3 {
+    font-size: 0.5rem !important;
+    top: 45% !important;
+    left: 5% !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 1174px) {
+  .quince-quinceaneras h2 {
+    font-size: 1.5rem !important;
+    top: 40% !important;
+    left: 5% !important;
+    transform: translate(0, -40%) !important;
+  }
+  .quince-quinceaneras h3 {
+    font-size: 1rem !important;
+    top: 50% !important;
+    left: 5% !important;
+  }
+}
+@media (max-width: 576px) {
+  .galeria-quince {
+    max-width: 80% !important;
+    gap: 5px !important;
+    margin-right: 30px !important;
+    margin-left: 20px !important;
+    padding: 30px !important;
+  }
+  .galeria-quince .img-wrapper {
+    width: 160px !important;
+    height: 200px !important;
+    position: relative !important;
+    transform: none !important;
+    top: unset !important;
+    left: unset !important;
+    margin: 10px auto !important;
+  }
+  .galeria-quince .img-wrapper:nth-child(n) {
+    transform: rotate(0);
+  }
+}
+@media (max-width: 690px) {
+  .portada-novia h2 {
+    font-size: 2rem !important; /* Reduce el tamaño en móviles */
+    top: 40% !important; /* Ajusta la posición para que no quede demasiado abajo */
+    left: 50% !important;
+    transform: translate(-50%, -40%) !important;
+    letter-spacing: 10px !important;
+    background: rgba(0, 0, 0, 0.7) !important; /* Mayor contraste en dispositivos pequeños */
+    padding: 10px !important;
+    text-align: center !important;
+    width: 90% !important;
+  }
+}
+@media (min-width: 431px) and (max-width: 1024px) {
+  .custom-card {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 430px) {
+  .custom-card {
+    grid-template-columns: 1fr !important;
+    gap: 100px !important;
+    padding: 5px !important;
+    margin-left: 60px !important;
+  }
+  .card-tamano {
+    width: 14rem !important;
+    height: 24rem !important;
+  }
+}
+@media (max-width: 1024px) {
+  .conteiner-sola {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    max-width: 90% !important;
+    padding: 60px !important;
+    border-radius: 16px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .contenedor-novia {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    max-width: 90% !important;
+    padding: 60px !important;
+    border-radius: 16px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .novias-box {
+    display: flex;
+    justify-content: center;
+  }
+}
 .portada {
   margin-top: 20px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
   border-color: #171819;
+  border-radius: 20px;
 }
 
 .moda-uno, .boda {
@@ -156,6 +287,15 @@ body {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(11, 11, 11, 0.652);
+}
+
+.showroom {
+  background-color: #eec0aa;
+  border-radius: 12px;
+  box-shadow: #171819;
+  font-size: 13px;
+  text-decoration: solid;
+  text-shadow: #080808;
 }
 
 .formulario {
@@ -459,29 +599,122 @@ footer {
   margin: 0 auto;
 }
 
-.fondo-opaco {
+.quince {
   position: relative;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
 }
-.fondo-opaco::before {
-  content: "";
+.quince-quinceaneras h2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 5%;
+  color: #b350e0;
+  font-size: 4.5rem;
+  font-family: "Playfair Display", serif;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+  letter-spacing: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: translate(0, -50%);
+  padding: 20px;
+}
+.quince-quinceaneras h3 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: #232221;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
+  transform: translate(-30%, -45%);
+  padding: 30%;
+}
+.quince-f {
+  margin-bottom: 30px;
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 20px 10px 10px rgb(0, 0, 0);
+}
+
+.galeria-quince {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 80%;
+  margin: 50px auto 20px auto;
+  gap: 10px;
+  min-height: 80vh;
+  margin-bottom: 50px;
+}
+.galeria-quince .img-wrapper {
+  position: absolute;
+  width: 220px;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease-in-out;
+}
+.galeria-quince .img-wrapper img {
   width: 100%;
   height: 100%;
-  background: url("../../../assets/img/quinceañeras/rita_quince_trece.webp") center/cover no-repeat;
-  opacity: 0.7;
-  z-index: -1;
+  object-fit: cover;
 }
-.fondo-opaco h1 {
-  position: relative;
-  font-size: 3rem;
+.galeria-quince:hover {
+  transform: scale(1.1);
+}
+.galeria-quince .img-wrapper:nth-child(1) {
+  top: 0;
+  left: 10%;
+  transform: rotate(-10deg);
+}
+.galeria-quince .img-wrapper:nth-child(2) {
+  top: 30px;
+  left: 30%;
+  transform: rotate(8deg);
+}
+.galeria-quince .img-wrapper:nth-child(3) {
+  top: 80px;
+  left: 50%;
+  transform: rotate(-6deg);
+}
+.galeria-quince .img-wrapper:nth-child(4) {
+  top: 120px;
+  left: 70%;
+  transform: rotate(10deg);
+}
+.galeria-quince .img-wrapper:nth-child(5) {
+  top: 180px;
+  left: 15%;
+  transform: rotate(-8deg);
+}
+.galeria-quince .img-wrapper:nth-child(6) {
+  top: 220px;
+  left: 40%;
+  transform: rotate(6deg);
+}
+.galeria-quince .img-wrapper:nth-child(7) {
+  top: 270px;
+  left: 60%;
+  transform: rotate(-12deg);
+}
+.galeria-quince .img-wrapper:nth-child(8) {
+  top: 320px;
+  left: 80%;
+  transform: rotate(8deg);
+}
+.galeria-quince .img-wrapper:nth-child(9) {
+  top: 320px;
+  left: 80%;
+  transform: rotate(8deg);
+}
+.galeria-quince .img-wrapper:nth-child(10) {
+  top: 320px;
+  left: 80%;
+  transform: rotate(8deg);
 }
 
 /*# sourceMappingURL=style.css.map */
