@@ -11,7 +11,7 @@
 </head>
 <body class="fondo-nuevo">
     <header>
-        <nav class="navbar">
+        <nav class="navbar mobile-nav">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html">
                 <img src="../icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp" alt="Lados" width="100" height="70"></a>
@@ -55,7 +55,29 @@
               </div>
             </div>
           </nav>
-
+          <!-- Navbar para pantallas grandes (a partir de 768px) -->
+  <nav class="navbar desktop-nav">
+    <div class="container-fluid d-flex align-items-center custom-nav">
+      <a class="navbar-brand logo" href="../index.html">
+        <img src="../icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp"class="lados" alt="Lados">
+      </a>
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item"><a class="nav-link active" href="../pages/nosotras.html">Nosotras</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/novias.html">Novias</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/quinceañeras.html">Quinceañeras</a></li>
+        <li class="nav-item"><a class="nav-link" href="../pages/invitadas.html">Invitadas</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="../pages/contacto.html" data-bs-toggle="dropdown">Contacto</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="../pages/contacto.html">Consultas</a></li>
+            <li><a class="dropdown-item" href="#">Reservas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Testimonios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
     </header>
 
     <main>
@@ -108,23 +130,22 @@
 
   <section> 
     <div class="col-6-md-8 col-md-12 col-md-lg-6">
-        <h3 class="subtitulo">Invitadas</h3>
+        <h3 class="subtitulo">Damas de honor</h3>
           <div class="row align-items-center"> 
           <!-- divido en dos columnas -->
             <div class="col-md-4 text-center">
-                <img src="../assets/img/invitadas/experiencia_unicainvitada.webp" class="img-fluid rounded f-invitada" alt="Sandra en las escalera del teatro ahora mira hacia el costado detras de un ramo de rosas">
+                <img src="../assets/img/invitadas/damas_de_honor.webp" class="img-fluid rounded f-honor" alt="las damas de hornor sacandose una hermosa foto junto a su amiga la novia todoas con vestidos de gran porte">
             </div>
               <div class="col-md-8">
-              <h2>Experiencia unica</h2>
-              <p class="custom-inv">Asistir a un casamiento o a una fiesta de quince es una ocasión especial que merece un vestido que haga sentir única y espectacular a cualquier invitada. Optar por un vestido de fiesta hecho a medida es la manera perfecta de asegurarse de destacar con elegancia y estilo. A diferencia de los modelos prediseñados, un vestido personalizado se adapta perfectamente al cuerpo, resaltando las mejores cualidades y brindando una comodidad inigualable durante toda la celebración. </p>
-              <p class="custom-inv">Además, un vestido hecho a medida permite expresar la personalidad y el gusto personal de una manera única. Desde la elección de las telas hasta los detalles en el diseño, cada aspecto se crea para reflejar el estilo individual de quien lo usa. Ya sea un corte clásico y sofisticado o un diseño moderno y audaz, la posibilidad de personalizarlo asegura que no habrá otro vestido igual en el evento, destacando con elegancia y originalidad. </p>
+              <h2>siempre amigas</h2>
+              <p class="custom-inv">Ser dama de honor en el casamiento de una amiga es un honor y una muestra de la profunda amistad que las une. Más que un título, representa el apoyo incondicional en uno de los días más importantes de su vida. Desde ayudar en la elección del vestido hasta organizar la despedida de soltera, ser dama de honor significa estar presente en cada detalle, brindar palabras de aliento y compartir emociones inolvidables. Es un papel lleno de alegría, compromiso y amor, donde la amistad se viste de gala para celebrar el comienzo de una nueva etapa.</p>
           </div>
     </div>
       </section>
     </main>
 
     <footer>
-        <img class="logo" src="../icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp" alt="">
+        <img class="footer-logo" src="../icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp" alt="">
         <p> @ 2025. All right reserved. Alen Baldez for Seven home</p>
     </footer>
     <!--BOOSTRAP-->

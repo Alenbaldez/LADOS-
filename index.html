@@ -11,10 +11,10 @@
 </head>
 <body class="fondo-nuevo">
     <header>
-      <nav class="navbar">
+      <nav class="navbar mobile-nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
-            <img src="./icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp" class="lados" alt="Lados"></a>
+            <img src="./icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp" class="lados" alt="el logo de la marca de confeccion de vestuario femenino"></a>
             MODA CIRCULAR 
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,6 +55,30 @@
           </div>
         </div>
       </nav>
+      <!-- Navbar para pantallas grandes (a partir de 768px) -->
+  <nav class="navbar desktop-nav">
+    <div class="container-fluid d-flex align-items-center custom-nav">
+      <a class="navbar-brand logo" href="./index.html">
+        <img src="./icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp"class="lados" alt="Lados">
+      </a>
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item"><a class="nav-link active" href="./pages/nosotras.html">Nosotras</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/novias.html">Novias</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/quinceañeras.html">Quinceañeras</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pages/invitadas.html">Invitadas</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="./pages/contacto.html" data-bs-toggle="dropdown">Contacto</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="./pages/contacto.html">Consultas</a></li>
+            <li><a class="dropdown-item" href="#">Reservas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Testimonios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
     </header>
     
     <main>
@@ -224,7 +248,7 @@
 
 
     <footer>
-        <img class="logo" src="./icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp" alt="">
+        <img class="footer-logo" src="./icons/WhatsApp Image 2025-01-14 at 9.02.12 PM.webp" alt="">
         <p> @ 2025. All right reserved. Alen Baldez for Seven home</p>
     </footer>
     <!--BOOSTRAP-->

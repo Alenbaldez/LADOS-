@@ -77,7 +77,8 @@
         flex: 1;            
         padding: 20px;
         border-radius: 10px; 
-        background-color: #f9f9f9; 
+        background-color: #fedcdc; 
+        text-decoration: solid;
 
         p {
             margin-bottom: 15px; 
@@ -93,8 +94,14 @@
     flex-wrap: wrap;               
     gap: 30px;                   
     padding: 40px 20px;            
-    background: #faf7f4;        
+    background: #eabfd4;        
     border-radius: 20px;           
     max-width: 1200px;             // Limita el ancho para mantener el diseño centrado
     margin: 0 auto;                // Centra el contenido
+}
+
+//dama de honor
+.f-honor {          
+    max-width: 1200px;             // Limita el ancho para mantener el diseño centrado
+    margin: 0 auto;
 }
