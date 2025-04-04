@@ -3,25 +3,41 @@
 @use "../utilities/maps" as m; 
 
 .custom-box {
-    display:grid;
-    grid-template-columns:300px 500px 600px;
-    grid-template-rows: 150px auto;
-    padding:60px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; 
+    grid-template-rows: auto auto;
+    padding: 60px 40px;
     column-gap: 60px;
     background-color: #ede1d7;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    p{ display: flex;
-        justify-content: baseline;
-        
+
+    p {
+        display: flex;
+        align-items: center; 
+        text-align: justify; 
+        line-height: 1.6;
+    }
+
+    // Responsividad para las box del index
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 40px 20px;
     }
 }
+
 
 .col-md-3 {
     margin-top: 60px;
     margin-bottom: 60px;
-    
-
 }
+
 
 .explicacion {
     background-color: #d3bdae;
@@ -41,5 +57,163 @@
 .custom-inv {
     padding-left: 10px;
 }
+
+// estilos para invitadas del index y su responsividad 
+.row.align-items-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+
+    .col-md-4 {
+        display: flex;
+        justify-content: center;
+
+        .f-invitada {
+            max-width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    .col-md-8 {
+        text-align: left;
+        padding: 20px;
+
+        h2 {
+            font-size: 2rem;
+            color: #7a4c74;
+            margin-bottom: 15px;
+        }
+
+        .custom-inv {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin-bottom: 15px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+
+        .col-md-4 {
+            order: 1;
+        }
+
+        .col-md-8 {
+            order: 2;
+            text-align: center;
+            padding: 15px;
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .custom-inv {
+                max-width: 90%;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 30px 15px;
+
+        .col-md-8 {
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .custom-inv {
+                font-size: 0.95rem;
+            }
+        }
+    }
+}
+
+    // estilos para nosotas del index y su responsividad
+
+    .container-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+        background: linear-gradient(to right, #f3e9e3, #fff); // Suave degradado
     
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+    
+        .col-md-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        h2 {
+            font-size: 1.8rem;
+            color: #7a4c74;
+            margin-bottom: 15px;
+        }
+    
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+            max-width: 300px;
+        }
+    
+        .f-nosotras {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+    
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    
+        @media (max-width: 992px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .col-md-3 {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            padding: 30px 15px;
+    
+            .f-nosotras {
+                max-width: 250px;
+            }
+        }
+    }
+    
+// estilos y responsividad de invitadas del index 
 

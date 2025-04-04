@@ -6,56 +6,107 @@
 //nosotras
 
 .atelier-container {
-    background: linear-gradient(to right, #bcb6be, #f9f4fc); /* Fondo degradado */
+    background: linear-gradient(to top, #997ca3, #f4eff8); 
     padding: 90px 20px;
     display: flex;
     justify-content: center;
-}
-
+    align-items: center;
+    min-height: 100vh;
+  
     .atelier {
-    max-width: 900px;
-    padding: 40px;
-    background: #e7c6c6;
-    border-radius: 32px;
-    box-shadow: 0 8px 40px rgba(107, 63, 160, 0.2); 
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+      max-width: 900px;
+      width: 90%;
+      padding: 50px;
+      background: rgba(240, 224, 224, 0.9); 
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(107, 63, 160, 0.2); 
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;  
+      backdrop-filter: blur(8px);
+      
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 35px rgba(73, 27, 130, 0.3);
+      }
+  
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #5a3d5c;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: #444;
+        line-height: 1.6;
+      }
+    } 
 }
 
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // Adaptable al tamaño del contenedor
     gap: 30px;
-    padding: 20px;
+    padding: 40px 20px;
     margin: 0 auto;
     max-width: 1200px;
-
+  
     .grid-item {
-        display: flex;
-        flex-direction: column; /* Apila imagen y texto verticalmente */
-        align-items:start;
-        justify-content: flex-start;
-        gap: 20px;
-        padding: 10px;
-        margin-top: 60px;
-        background-color: #fceee1;
-        border-radius: 10px;
-        
-
-        img {
-            @include mixins.vestido;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        p {
-            margin-top:30px;
-            text-align: center;
-        }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+      padding: 20px;
+      background: rgba(252, 238, 225, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+  
+      img {
+        @include mixins.vestido;
+        width: 100%;
+        height: 300px; // Tamaño uniforme asi la ajusto a la card
+        object-fit: cover;
+        border-radius: 8px;
+      }
+  
+      p {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1rem;
+        color: #050505;
+        font-weight: 500;
+      }
     }
-}
+    
+    @media (max-width: 768px) {
+      gap: 20px;
+      padding: 20px;
+  
+      .grid-item {
+        padding: 15px;
+        
+        img {
+          height: 250px; // Reduce altura en móviles
+        }
+  
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  
+
+
  .img-fluid {
     width: 100%;
             height: auto;

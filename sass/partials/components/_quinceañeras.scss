@@ -47,7 +47,6 @@
     }
 }
 
-
 .galeria-quince {
     display: flex;
     flex-wrap: wrap;
@@ -94,3 +93,58 @@
     
     
 }
+
+// la ultima seccion de quiceañeras 
+.quinceaneras-box {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #d63384;
+    }
+  
+    .intro {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #555;
+    }
+  
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  
+      .card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+        padding: 15px;
+  
+        img {
+          width: 100%;
+          border-radius: 8px;
+        }
+  
+        h3 {
+          font-size: 1.5rem;
+          margin: 10px 0;
+          color: #d63384;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #666;
+        }
+      }
+    }
+  }
+  
