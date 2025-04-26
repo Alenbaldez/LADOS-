@@ -1,62 +1,51 @@
-@use "../utilities/varialbles" as v; 
-@use "../utilities/mixins";     
-@use "../utilities/maps" as m; 
+@use "../utilities/varialbles" as v;
+@use "../utilities/mixins";
+@use "../utilities/maps" as m;
 
-// invitadas 
+// invitadas
 
 .portada {
-    position: relative;
-
     &-invitadas {
         h2 {
-            position: absolute;
-            top: 50%;
             right: 5%;
             color: #f1f0eb;
-            font-size: 5rem;
+            font-size: 4rem;
             font-family: sans-serif;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             letter-spacing: 10px;
-            transform: translate(0, -50%);
             padding: 20px;
         }
 
-        
         h3 {
-            position: absolute;
-            top: calc(25% + 50%); 
             color: #232221;
             font-size: 2rem;
             left: 50%;
             font-family: sans-serif;
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
             letter-spacing: 5px;
-            transform: translate(0, -50%);
             padding: 20px;
-}
-    &-f {
-        margin-top: map-get(m.$espaciados, md);
-        width: 100%;
-        max-height: 60vh;
-        object-fit: cover;
-        border-radius: 10px;
+        }
     }
 }
+
+.portada-f {
+    width: 100%;
+    height: auto;
 }
 
 .galeria_invitadas {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(3, auto);  
-    gap: 10px; 
-    max-width: 80%; // Reduce el ancho de la galería
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    max-width: 100%; // Reduce el ancho de la galería
     margin: 0 auto; // Centra la galería horizontalmente
     padding: 20px 0; // Espaciado vertical
 
     img {
         width: 100%;
         height: auto;
-        border-radius: 10px; 
+        border-radius: 10px;
         object-fit: cover;
         transition: transform 0.3s ease;
 
@@ -67,41 +56,87 @@
 }
 
 .contenedor {
-    display: flex;          
-    gap: 20px;              
-    max-width: 80%;         
-    margin: 0 auto;   
+    display: flex;
+    gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
     padding: 20px;
 
     .columna {
-        flex: 1;            
+        flex: 1;
         padding: 20px;
-        border-radius: 10px; 
-        background-color: #fedcdc; 
+        border-radius: 10px;
+        background-color: #fedcdc;
         text-decoration: solid;
 
         p {
-            margin-bottom: 15px; 
-            line-height: 1.6; 
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
     }
 }
 
-
-// experiencia unica 
+// experiencia unica
 .invitadas {
-    display: flex;                 
-    flex-wrap: wrap;               
-    gap: 30px;                   
-    padding: 40px 20px;            
-    background: #eabfd4;        
-    border-radius: 20px;           
-    max-width: 1200px;             // Limita el ancho para mantener el diseño centrado
-    margin: 0 auto;                // Centra el contenido
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    background: #eabfd4;
+    border-radius: 20px;
+    max-width: 1200px; // Limita el ancho para mantener el diseño centrado
+    margin: 0 auto; // Centra el contenido
 }
 
 //dama de honor
-.f-honor {          
-    max-width: 1200px;             // Limita el ancho para mantener el diseño centrado
+.f-honor {
+    max-width: 1200px; // Limita el ancho para mantener el diseño centrado
     margin: 0 auto;
+}
+
+// media query  page invitadas
+
+@media (min-width: 390px) and (max-width: 768px) {
+
+    .h2,
+    h2 {
+        top: 20%;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        background-color: #0dcaf0;
+        left: 50%;
+    }
+
+    h3 {
+        top: 36%;
+        left: 50%;
+        font-size: 0.6rem;
+        background-color: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1270px) {
+
+    .h2,
+    h2 {
+        top: 20%;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        left: 50%;
+    }
+
+    h3 {
+        top: 50%;
+        left: 50%;
+        font-size: 1rem;
+    }
+}
+
+// galeria invitadas dos filas hasta 576px
+
+@media (max-width: 576px) {
+    .galeria_invitadas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

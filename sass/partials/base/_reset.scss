@@ -1,26 +1,14 @@
 body {
-    
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; // Hace que ocupe toda la pantalla
     margin: 0;
     padding: 0;
     background-color: #fceee1;
     margin: 12px;
 }
-
-
 .fondo-nuevo{
     background-color: azure;
 }
 
-main {
-    flex: 1; // Esto empuja el footer hacia abajo
-}
-
-
 footer {
-    position: relative; // O "static" para que siga el flujo normal
     width: 100%;
     background: #232221;
     color: white;
